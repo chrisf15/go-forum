@@ -1,43 +1,47 @@
 # go-forum
 
-[![Build Status](https://travis-ci.org/linehk/go-forum.svg?branch=master)](https://travis-ci.org/linehk/go-forum)
-[![codecov](https://codecov.io/gh/linehk/go-forum/branch/master/graph/badge.svg)](https://codecov.io/gh/linehk/go-forum)
-[![Go Report Card](https://goreportcard.com/badge/github.com/linehk/go-forum)](https://goreportcard.com/report/github.com/linehk/go-forum)
+[![Build Status](https://travis-ci.org/chrisf15/go-forum.svg?branch=master)](https://travis-ci.org/chrisf15/go-forum)
+[![codecov](https://codecov.io/gh/chrisf15/go-forum/branch/master/graph/badge.svg)](https://codecov.io/gh/chrisf15/go-forum)
+[![Go Report Card](https://goreportcard.com/badge/github.com/chrisf15/go-forum)](https://goreportcard.com/report/github.com/chrisf15/go-forum)
 
-[English](./README-en.md "English") | 简体中文
+go-forum is a simple forum web application that uses the `database/sql` and `http` packages in the standard library, with `toml` as the configuration file format and `MySQL` as the database.
 
-go-forum 是一个简单的论坛 Web 程序，主要使用标准库中的 `database/sql` 和 `http` 包实现，以 `toml` 为配置文件格式和以 `MySQL` 为数据库。
-
-## 安装
+## Installation
 
 ```bash
-git clone https://github.com/linehk/go-forum.git
+git clone https://github.com/chrisf15/go-forum.git
 ```
 
-建立数据库：
+Create database:
 
 ```bash
 mysql -uroot -proot < model/setup.sql
 ```
 
-在 `config.toml` 中填写配置选项。
+Fill in the configuration options in `config.toml`.
 
-然后进行编译：
+Then, build it:
 
 ```bash
 go build -o go-forum
 ```
 
-再运行：
+And, run it：
 
 ```bash
 ./go-forum
 ```
 
-## 使用
+## Usages
 
-访问 `http://localhost:8080/`。
+Visit `http://localhost:8080/`.
 
-## 开源许可证
+## Contributing
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flinehk%2Fgo-forum.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flinehk%2Fgo-forum?ref=badge_large)
+If you feel that there is something to improve this project, please feel free to launch Pull Request.
+
+For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT License](./LICENSE "MIT License")
